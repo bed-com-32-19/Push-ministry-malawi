@@ -7,7 +7,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -23,6 +25,30 @@ html {
   margin: 8px;
 }
 
+.about-menu {
+  background: rgb(93, 124, 151);
+  text-align: center;
+}
+.about-menu ul {
+  display: inline-flex;
+  list-style: none;
+  color: rgb(93, 124, 151);
+}
+.about-menu ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+}
+.about-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.active,
+.about-menu ul li:hover {
+  background: rgb(93, 124, 151);
+  border-radius: 3px;
+}
+
 .about-section {
   padding: 50px;
   text-align: center;
@@ -34,7 +60,8 @@ html {
   padding: 0 16px;
 }
 
-.container::after, .row::after {
+.container::after,
+.row::after {
   content: "";
   clear: both;
   display: table;
